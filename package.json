@@ -1,0 +1,72 @@
+{
+  "name": "tailwind-config-utils",
+  "version": "0.1.0",
+  "description": "Common utilities for Tailwind CSS v4 - theme extensions, dark mode, breakpoints, and custom utilities",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    },
+    "./theme": {
+      "types": "./dist/theme/index.d.ts",
+      "import": "./dist/theme/index.mjs",
+      "require": "./dist/theme/index.js"
+    },
+    "./dark-mode": {
+      "types": "./dist/dark-mode/index.d.ts",
+      "import": "./dist/dark-mode/index.mjs",
+      "require": "./dist/dark-mode/index.js"
+    },
+    "./breakpoints": {
+      "types": "./dist/breakpoints/index.d.ts",
+      "import": "./dist/breakpoints/index.mjs",
+      "require": "./dist/breakpoints/index.js"
+    },
+    "./utilities": {
+      "types": "./dist/utilities/index.d.ts",
+      "import": "./dist/utilities/index.mjs",
+      "require": "./dist/utilities/index.js"
+    }
+  },
+  "type": "module",
+  "scripts": {
+    "build": "tsc && esbuild src/index.ts --bundle --outfile=dist/index.js --format=esm --platform=node",
+    "dev": "tsc --watch",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "keywords": [
+    "tailwind",
+    "tailwindcss",
+    "tailwindcss-v4",
+    "theme",
+    "dark-mode",
+    "breakpoints",
+    "utilities",
+    "css"
+  ],
+  "author": "Peter <peter@clawd.bot>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/peterwsl/tailwind-config-utils"
+  },
+  "bugs": {
+    "url": "https://github.com/peterwsl/tailwind-config-utils/issues"
+  },
+  "homepage": "https://github.com/peterwsl/tailwind-config-utils",
+  "peerDependencies": {
+    "tailwindcss": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "esbuild": "^0.20.0",
+    "typescript": "^5.0.0",
+    "vitest": "^1.0.0"
+  },
+  "packageManager": "pnpm@10.28.2+sha512.41872f037ad22f7348e3b1debbaf7e867cfd448f2726d9cf74c08f19507c31d2c8e7a11525b983febc2df640b5438dee6023ebb1f84ed43cc2d654d2bc326264"
+}
