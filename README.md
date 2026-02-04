@@ -1,6 +1,10 @@
-# Tailwind Config Utils
+# tailwind-config-utils
 
 Common utilities for Tailwind CSS v4 that are missing from core.
+
+[![NPM Package](https://img.shields.io/npm/v/tailwind-config-utils.svg)](https://www.npmjs.com/package/tailwind-config-utils)
+[![NPM Downloads](https://img.shields.io/npm/dw/tailwind-config-utils)](https://www.npmjs.com/package/tailwind-config-utils)
+[![License](https://img.shields.io/npm/l/tailwind-config-utils.svg)](LICENSE)
 
 ## Features
 
